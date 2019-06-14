@@ -1,0 +1,58 @@
+<template>
+<div class="news-box">
+  <div class="title">
+    <h2>最新提问</h2>
+    <a href="" target="_blank">更多>></a>
+  </div>
+  <ul>
+    <li><a href="" target="_blank">中共中央国务院关于加强食品安全工作</a></li>
+    <li><a href="" target="_blank">中央脱贫攻坚专项巡视整改进展情况全部公开</a></li>
+    <li><a href="" target="_blank">评"对华文明冲突论":不要逆历史潮流而动</a></li>
+    <li><a href="" target="_blank">外交部谈谷歌暂停华为业务 支持中企维权</a></li>
+    <li><a href="" target="_blank">北京积分落户明日启动 规模仍为6000人</a></li>
+    <li><a href="" target="_blank">台当局鼓吹台商回流 台商:现实很骨感</a></li>
+    <li><a href="" target="_blank">海南发布第三批自贸区制度创新案例</a></li>
+    <li><a href="" target="_blank">评"对华文明冲突论":不要逆历史潮流而动</a></li>
+  </ul>
+</div>
+</template>
+
+
+<style lang="less">
+.news-box {
+  width: 440px;
+  padding: 10px 20px;
+  border: 1px solid #efefef;
+}
+.title {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  h2 {
+    font-size: 30px;
+    color: #d93d3f;
+  }
+  a {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 14px;
+  }
+}
+ul {
+  li {
+    line-height: 38px;
+    font-size: 14px;
+  }
+  li:before {
+    content: '•';
+    color: #595757;
+    width: 25px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    float: left;
+    line-height: 38px;
+  }
+}
+</style>

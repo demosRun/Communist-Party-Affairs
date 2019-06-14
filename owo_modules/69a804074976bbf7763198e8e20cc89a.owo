@@ -1,0 +1,32 @@
+<template>
+  <div class="a-show">
+    <a target="_blank" href="#">
+      <img src="http://theory.people.com.cn/NMediaFile/2018/1217/MAIN201812171330024824723270235.jpg" width="1000" height="125" border="0" alt="">
+    </a>
+  </div>
+</template>
+
+<style lang="less">
+.a-show {
+  height: 70px;
+  margin: 20px 0;
+  background-color: #c2c1c1;
+  text-align: center;
+  line-height: 70px;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+}
+a, img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+</style>

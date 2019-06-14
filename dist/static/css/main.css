@@ -1,0 +1,61 @@
+/* 这个文件里写的是全局样式,在各个页面都生效 */
+body, html {
+  margin: 0;
+  padding: 0;
+  user-select: text;
+  min-width: 1200px;
+  font: normal 12px/180% "SimSun";
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+html {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: auto 880px;
+  background-position: center top;
+  background-image: url('../resource/bg.png');
+}
+h1, h2, h3, h4, h5, input {
+  margin: 0;
+  padding: 0;
+}
+.fl {
+  float: left;
+}
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  color: unset;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.o-topBar {
+  margin-bottom: 27%;
+}
+
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td{
+  margin:0;
+  padding:0;
+}
+
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+[template=home] .knowledge .left {
+  margin: 0px 22px;
+}
+

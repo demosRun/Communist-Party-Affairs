@@ -1,0 +1,124 @@
+<template lang="pug">
+.drop-down-box
+  .drop-down-item
+    .title-bar
+      span 
+      h2 党员
+    .panel
+      a(href="", target="_blank") 预审未合格的发展对象能不能填写《中国共产党入党志愿书》？
+      a(href="", target="_blank") 出国（境）的预备党员回国后，该如何办理转正手续？
+      a(href="", target="_blank") 预备党员在预备期间工作调动比较频繁，其转正手续如何办理？
+      a(href="", target="_blank") 复转军人、大学毕业生中的预备党员，没有落实工作单位的，其转正手续如何办理？
+      a(href="", target="_blank") 已调出的发展对象能否在原单位办理入党手续？
+      a(href="", target="_blank") 为什么要正确考察发展对象的入党动机？
+  .drop-down-item
+    .title-bar
+      span 
+      h2 党的组织
+    .panel
+      a(href="", target="_blank") 预审未合格的发展对象能不能填写《中国共产党入党志愿书》？
+      a(href="", target="_blank") 出国（境）的预备党员回国后，该如何办理转正手续？
+      a(href="", target="_blank") 预备党员在预备期间工作调动比较频繁，其转正手续如何办理？
+      a(href="", target="_blank") 复转军人、大学毕业生中的预备党员，没有落实工作单位的，其转正手续如何办理？
+      a(href="", target="_blank") 已调出的发展对象能否在原单位办理入党手续？
+      a(href="", target="_blank") 为什么要正确考察发展对象的入党动机？
+  .drop-down-item
+    .title-bar
+      span 
+      h2 党的干部
+    .panel
+      a(href="", target="_blank") 预审未合格的发展对象能不能填写《中国共产党入党志愿书》？
+      a(href="", target="_blank") 出国（境）的预备党员回国后，该如何办理转正手续？
+      a(href="", target="_blank") 预备党员在预备期间工作调动比较频繁，其转正手续如何办理？
+      a(href="", target="_blank") 复转军人、大学毕业生中的预备党员，没有落实工作单位的，其转正手续如何办理？
+      a(href="", target="_blank") 已调出的发展对象能否在原单位办理入党手续？
+      a(href="", target="_blank") 为什么要正确考察发展对象的入党动机？
+  .drop-down-item
+    .title-bar
+      span 
+      h2 党的纪律
+    .panel
+      a(href="", target="_blank") 预审未合格的发展对象能不能填写《中国共产党入党志愿书》？
+      a(href="", target="_blank") 出国（境）的预备党员回国后，该如何办理转正手续？
+      a(href="", target="_blank") 预备党员在预备期间工作调动比较频繁，其转正手续如何办理？
+      a(href="", target="_blank") 复转军人、大学毕业生中的预备党员，没有落实工作单位的，其转正手续如何办理？
+      a(href="", target="_blank") 已调出的发展对象能否在原单位办理入党手续？
+      a(href="", target="_blank") 为什么要正确考察发展对象的入党动机？
+  .drop-down-item
+    .title-bar
+      span 
+      h2 党的知识
+    .panel
+      a(href="", target="_blank") 预审未合格的发展对象能不能填写《中国共产党入党志愿书》？
+      a(href="", target="_blank") 出国（境）的预备党员回国后，该如何办理转正手续？
+      a(href="", target="_blank") 预备党员在预备期间工作调动比较频繁，其转正手续如何办理？
+      a(href="", target="_blank") 复转军人、大学毕业生中的预备党员，没有落实工作单位的，其转正手续如何办理？
+      a(href="", target="_blank") 已调出的发展对象能否在原单位办理入党手续？
+      a(href="", target="_blank") 为什么要正确考察发展对象的入党动机？
+</template>
+
+
+<style lang="less">
+.title-bar {
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 36px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #d9d5d1;
+  background: linear-gradient(#ece4d9, #fcf1e5);
+  span {
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('@&drop.png&');
+    display: inline-block;
+    // 清除inline-block间隙问题
+    margin-bottom: -22px;
+    margin-right: -18px;
+    pointer-events: none;
+    transition: all 0.5s;
+  }
+  h2 {
+    color: #a79071;
+    font-size: 36px;
+    display: inline-block;
+    pointer-events: none;
+  }
+}
+.panel {
+  height: 0;
+  overflow: hidden;
+  border: 1px solid #d9d5d1;
+  border-top: none;
+  padding: 0 30px;
+  font-size: 18px;
+  color: #484848;
+  font-weight: bold;
+  line-height: 58px;
+  transition: height 0.5s;
+  a {
+    height: 58px;
+    display: block;
+    overflow: hidden;
+  }
+}
+// 默认展开第一项
+.drop-down-item:nth-child(1) .panel {
+  height: auto;
+}
+.active {
+  .title-bar {
+    background: linear-gradient(#d7914d, #f2ceaa);
+    span {
+      transform: rotate(90deg);
+      color: #764813;
+    }
+    h2 {
+      color: #764813;
+    }
+  }
+}
+</style>

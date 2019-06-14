@@ -1,0 +1,196 @@
+<template lang="pug">
+.home
+  temple(name="topBar", src="http://600.run:8004/public/0e212f1ba9135c5d4bab0bca075edd77.page")
+  .content.w1000
+    .main-title.main-title-1
+    .knowledge.clear
+      .left.fl
+        temple(name="list", src="./src/module/dropDown.owo")
+      .right.fl
+        .card.card-1
+          a(href="", target="_blank") 党章党规
+        .card.card-2
+          a(href="", target="_blank")  思想理论
+        .card.card-3 
+          a(href="", target="_blank") 组工文件
+        .card.card-4
+          a(href="", target="_blank") 党务知识
+  .unscramble
+    .w1000
+      .main-title.main-title-2
+      //- 解读书本区
+      .book
+        .left.book-content
+          .card
+            a(href="", target="_blank") 《中国共产党党内监督条例》问答
+          .card 《中国共产党支部工作条例（试行）》
+          .card 发展党员工作问答
+          .card 《关于新形势下党内政治生活的若干准则》问答
+          .card 《中国共产党党内监督条例》问答
+          .card 《中国共产党党内监督条例》问答
+        .right.book-content
+          .card 《中国共产党党内监督条例》问答
+          .card 《中国共产党支部工作条例（试行）》
+          .card 发展党员工作问答
+          .card 《关于新形势下党内政治生活的若干准则》问答
+          .card 《中国共产党党内监督条例》问答
+          .card 《中国共产党党内监督条例》问答
+          .card 《中国共产党党内监督条例》问答
+          .card 《中国共产党党内监督条例》问答
+          .card 《中国共产党党内监督条例》问答
+          .card 《中国共产党党内监督条例》问答
+  .w1000.answers
+    temple(name="ad", src="http://600.run:8004/public/54fd65e606b986705fe11beb43c26652.page")
+    .main-title.main-title-3
+    .answers-box.clear
+      temple(name="list", src="./src/module/newsCard.owo")
+      temple(name="list2", src="./src/module/newsCard.owo")
+    //- 提问
+    temple(name="questions", src="./src/module/questions.owo")
+    .main-title.main-title-4
+    temple(name="swiper", src="http://600.run:8004/public/822b7255c3df4e3b591b8b278f25cb57.page")
+    //- 底部查看更多按钮
+    .more-button
+      a(href="", target="_blank") 查看更多
+    temple(name="copyright", src="http://600.run:8004/public/0c48cb85c0a8c60fa4346b4e81c7866e.page")
+</template>
+
+
+<style lang="less">
+.w1000 {
+  width: 1000px;
+  margin: 0 auto;
+}
+.content {
+  background-color: white;
+  margin-top: 460px;
+}
+.main-title {
+  height: 86px;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px 0;
+}
+.main-title-1 {
+  background-image: url('@&main-title.png&');
+}
+
+.main-title-2 {
+  background-image: url('@&main-title-2.png&');
+}
+
+.main-title-3 {
+  background-image: url('@&main-title-3.png&');
+}
+
+.main-title-4 {
+  background-image: url('@&main-title-4.png&');
+}
+
+.knowledge {
+  .left {
+    width: 730px;
+  }
+  .right {
+    width: 206px;
+  }
+  .card {
+    width: 186px;
+    height: 107px;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    line-height: 100px;
+    text-align: right;
+    padding-right: 20px;
+    font-family: "Microsoft YaHei";
+    margin-bottom: 20px;
+  }
+  .card-1 {
+    background-image: url('@&card1.png&');
+  }
+  .card-2 {
+    background-image: url('@&card2.png&');
+  }
+  .card-3 {
+    background-image: url('@&card3.png&');
+  }
+  .card-4 {
+    background-image: url('@&card4.png&');
+  }
+}
+
+.unscramble {
+  margin-top: 50px;
+  padding-top: 20px;
+  background-color: #efe5d6;
+  .book {
+    width: 1162px;
+    height: 682px;
+    position: relative;
+    background-image: url('@&book.png&');
+    .book-content {
+      width: 420px;
+      height: 560px;
+      position: absolute;
+      overflow: auto;
+      .card {
+        padding: 10px;
+        line-height: 30px;
+        margin: 15px 10px;
+        font-size: 22px;
+        background-color: #d52b41;
+        color: white;
+        border-radius: 0 5px 5px 0;
+        display: inline-block;
+        box-shadow: -5px 5px 3px #888888;
+      }
+      .card:nth-child(even) {
+        background-color: #ea705b;
+      }
+    }
+    .left {
+      left: 40px;
+      top: 20px;
+    }
+    .right {
+      left: 500px;
+      top: 20px;
+    }
+  }
+}
+
+.answers .a-show {
+  height: 125px;
+  line-height: 125px
+}
+
+.answers-box {
+  margin: 10px 0;
+}
+
+.answers-box [template=list] {
+  float: left;
+}
+
+.answers-box [template=list2] {
+  float: right;
+}
+
+.more-button {
+  width: 145px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  margin: 30px auto;
+  background-color: #efe5d6;
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+</style>

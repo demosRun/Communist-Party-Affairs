@@ -1,0 +1,106 @@
+<template>
+  <div class="swiper-zBLJxURsOhhagFAH">
+    <ul> 
+      <li><a href="" target="_blank"><img src="http://www.people.com.cn/NMediaFile/2019/0614/MAIN201906140918347048629850438.jpg" width="450" height="590" /></a><em>介绍的内容</em></li>
+      <li><a href="" target="_blank"><img src="http://www.people.com.cn/NMediaFile/2019/0614/MAIN201906140918347048629850438.jpg" width="450" height="590" /></a><em>介绍的内容</em></li>
+      <li><a href="" target="_blank"><img src="http://www.people.com.cn/NMediaFile/2019/0614/MAIN201906140918347048629850438.jpg" width="450" height="590" /></a><em>介绍的内容</em></li>
+      <li><a href="" target="_blank"><img src="http://www.people.com.cn/NMediaFile/2019/0614/MAIN201906140918347048629850438.jpg" width="450" height="590" /></a><em>介绍的内容</em></li>
+      <li><a href="" target="_blank"><img src="http://www.people.com.cn/NMediaFile/2019/0614/MAIN201906140918347048629850438.jpg" width="450" height="590" /></a><em>介绍的内容</em></li>
+      <li><a href="" target="_blank"><img src="http://www.people.com.cn/NMediaFile/2019/0614/MAIN201906140918347048629850438.jpg" width="450" height="590" /></a><em>介绍的内容</em></li>
+    </ul> 
+    <div class="prev"></div>
+    <div class="next"></div>    
+  </div>
+
+</template>
+
+<script>
+module.exports = {
+  created: () => {
+    setTimeout(() => {
+      // 待修复 如果一个页面存在两个就会出问题
+      $('.swiper-zBLJxURsOhhagFAH ul').roundabout({
+        easing: 'easeOutInCirc',
+        duration: 600,
+        minOpacity: 1,
+        startingChild: 5,
+        btnNext: ".next",
+        btnPrev: ".prev"
+      })
+    }, 0)
+  }
+}
+</script>
+
+<style lang="less">
+.swiper-zBLJxURsOhhagFAH {
+  position: relative;
+  width: 1000px;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 600px;
+}
+
+.roundabout-holder {
+  height: 100%;
+  margin: 0 auto;
+}
+.roundabout-moveable-item {
+  height: 100%;
+  cursor: pointer;
+}
+
+.roundabout-moveable-item img {
+  height: 100%;
+  width: 100%;
+}
+
+.next {
+  background:url('https://cunchu.site/owo/material/bjdqh/left.png') no-repeat;
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  background-position: center;
+  transform: rotate(180deg);
+}
+.prev {
+  background: url('https://cunchu.site/owo/material/bjdqh/left.png') no-repeat;
+  width: 55px;
+  height: 55px;
+  background-position: center;
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+a {
+  display: block;
+  width: 450px;
+  height: 100%;
+}
+li {
+  list-style: none;
+  list-style-type: none;
+}
+em {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-style: inherit;
+  width: 98%;
+  padding: 0 1%;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+</style>
