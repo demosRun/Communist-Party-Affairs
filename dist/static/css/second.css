@@ -1,0 +1,189 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  user-select: text;
+  font: normal 12px/180% "SimSun";
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+body {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+  min-width: 1200px;
+  background-image: url('../resource/bg-second.png');
+}
+
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td {
+  margin:0;
+  padding:0;
+}
+.fl {
+  float: left;
+}
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  color: unset;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.home {
+  margin-top: 240px;
+  background-color: white;
+}
+p {
+  margin: 10px 0;
+}
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.nav {
+  line-height: 40px;
+}
+
+.nav a {
+  color: #484848;
+  margin: 0 5px;
+}
+
+.title .tag {
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #ce2942;
+}
+
+.title .tag2 {
+  background-color: #1e3bb9;
+}
+
+.title .tag3 {
+  background-color: #33975f;
+}
+
+.title {
+  line-height: 80px;
+}
+
+.clear {
+  clear: both;
+}
+
+.title h1 {
+  display: inline;
+  font-size: 36px;
+  margin: 0 10px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 30px;
+  width: 750px;
+}
+
+.text-bottom em {
+  font-style: normal;
+  color: #969696;
+  margin-right: 20px;
+}
+
+.news-list {
+  width: 750px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #797979;
+}
+
+.news-list:last-child { 
+  border-bottom: none;
+}
+
+textarea {
+  width: 730px;
+  height: 90px;
+  resize: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.submit {
+  width: 750px;
+}
+
+.submit input {
+  width: 100px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+  background-color: #d52c1a;
+  color: white;
+  float: right;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+footer[template=home] {
+  color: #000;
+  font-size: 12px;
+  position: relative;
+  background-color: #fff;
+  padding: 40px
+}
+[template=home] p {
+  margin: 12px 0;
+  width: 100%;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* 手机屏幕 */
+.min {
+  min-width: unset;
+  background-size: 191% auto;
+}
+
+.min .home {
+  margin-top: 31vw;
+}
+
+.min .content {
+  padding: 0 10px;
+}
+
+.min .title {
+  line-height: 40px;
+}
+
+.min .title h1 {
+  font-size: 28px;
+}
+
+.min .title .tag {
+  padding: 5px 10px;
+  font-size: 22px;
+}
+
+.min .text, .min .news-list, .min .submit {
+  width: unset
+}
+
+.min textarea {
+  width: calc(100% - 20px);
+}

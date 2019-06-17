@@ -25,6 +25,8 @@ $(function () {
     loop: true,
     // 禁用鼠标点击
     simulateTouch: false,
+    calculateHeight: true,
+    useCSS3Transforms: true,
     slidesPerView: 3,
     //其他设置
     tdFlow: {
