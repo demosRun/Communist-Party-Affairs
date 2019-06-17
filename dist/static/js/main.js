@@ -32,7 +32,7 @@ $(function () {
     tdFlow: {
       rotate : 0,
       stretch : ratio < 1 ? 20 : 80,
-      depth: ratio < 1 ? 250 : 80,
+      depth: ratio < 1 ? 10 : 80,
       modifier : 1,
       roundLengths : true
     }
