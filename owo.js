@@ -17,7 +17,7 @@ module.exports = {
     },
     {
       name: 'viewport',
-      content: 'width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no',
+      content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi',
     },
     {
       name: 'format-detection',
@@ -95,12 +95,12 @@ module.exports = {
       src: "http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"
     },
     {
-      name: "roundabout",
-      src: "http://dangjian.people.com.cn/img/MAIN/2019/05/119287/js/roundabout.js"
+      name: "swiper2.0",
+      src: "http://tools.people.com.cn/libs/swiper/2.0/idangerous.swiper.min.js"
     },
     {
-      name: "jquery.easing.1.3",
-      src: "http://dangjian.people.com.cn/img/MAIN/2019/05/119287/js/jquery.easing.1.3.js"
+      name: "3dflow",
+      src: "./src/resource/idangerous.swiper.3dflow.js"
     },
     {
       name: "main",
@@ -110,10 +110,18 @@ module.exports = {
   // 使用到的样式列表
   styleList: [
     {
+      name: "swiper2.0",
+      src: "http://tools.people.com.cn/libs/swiper/2.0/idangerous.swiper.css"
+    },
+    {
+      name: "3dflow",
+      src: "./src/resource/idangerous.swiper.3dflow.css"
+    },
+    {
       name: "main",
       src: "./src/main.css",
       resource: true
-    }
+    },
   ],
   // 页面清单
   pageList: [

@@ -16,7 +16,6 @@
     background-color: #ffffff;
   }
   .copyright {
-    width: 500px;
     height: 100px;
     line-height: 20px;
     text-align: center;

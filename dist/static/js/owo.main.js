@@ -1,35 +1,17 @@
-// Fri Jun 14 2019 17:44:54 GMT+0800 (GMT+08:00)
+// Mon Jun 17 2019 14:41:09 GMT+0800 (GMT+08:00)
 
 "use strict";
 
 window.owo = {
   // 页面数据和方法
   script: {
-    "home": {
-      "template": {
-        "swiper": {
-          "created": function created() {
-            setTimeout(function () {
-              // 待修复 如果一个页面存在两个就会出问题
-              $('.swiper-zBLJxURsOhhagFAH ul').roundabout({
-                easing: 'easeOutInCirc',
-                duration: 600,
-                minOpacity: 1,
-                startingChild: 5,
-                btnNext: ".next",
-                btnPrev: ".prev"
-              });
-            }, 0);
-          },
-          "prop": {}
-        }
-      }
-    },
+    "home": {},
     "topBar": {},
     "list": {},
     "ad": {},
     "list2": {},
     "questions": {},
+    "swiper": {},
     "copyright": {}
   },
   // 页面默认入口
