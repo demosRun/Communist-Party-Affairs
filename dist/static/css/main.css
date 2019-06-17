@@ -283,7 +283,7 @@ li {
 }
 
 .questions-box {
-  height: 300px;
+  padding-bottom: 40px;
   margin-top: 25px;
   position: relative
 }
@@ -334,13 +334,18 @@ li {
   position: relative
 }
 
+.next.swiper-button {
+  right: 0;
+}
+
 .swiper-button {
   width: 30px;
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
-  cursor: pointer
+  cursor: pointer;
+  z-index: 999;
 }
 [template=swiper] .last {
   left: 0
@@ -499,7 +504,6 @@ footer[template=copyright] {
   width: 100%
 }
 [template=home] .swiper-box {
-  height: 500px;
   position: relative
 }
 
@@ -583,10 +587,16 @@ footer[template=copyright] {
   margin: 0 20px;
 }
 
-.min [template=home] .swiper-box, .min .swiper-container {
-  height: 50vw;
-}
-
 .min [template=home] .swiper-box {
   margin: 0 20px;
+  overflow: hidden;
+}
+
+.min .swiper-container {
+  width: 200%;
+  left: -50%;
+}
+
+.min [template=swiper] li {
+  height: 80vw;
 }

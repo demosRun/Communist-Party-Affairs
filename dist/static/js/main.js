@@ -31,8 +31,8 @@ $(function () {
     //其他设置
     tdFlow: {
       rotate : 0,
-      stretch : ratio < 1 ? 20 : 80,
-      depth: ratio < 1 ? 10 : 80,
+      stretch : ratio < 1 ? 120 : 80,
+      depth: ratio < 1 ? 240 : 80,
       modifier : 1,
       roundLengths : true
     }
