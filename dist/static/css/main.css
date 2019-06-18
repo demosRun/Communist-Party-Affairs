@@ -159,7 +159,6 @@ li {
 }
 [template=list] .panel {
   height: 0;
-  overflow: hidden;
   border: 1px solid #d9d5d1;
   border-top: none;
   padding: 0 30px;
@@ -167,7 +166,8 @@ li {
   color: #484848;
   font-weight: 700;
   line-height: 58px;
-  transition: height .5s
+  transition: height .5s;
+  overflow: auto;
 }
 [template=list] .panel a {
   height: 58px;
@@ -599,4 +599,14 @@ footer[template=copyright] {
 
 .min [template=swiper] li {
   height: 80vw;
+}
+
+.min [template=list] .panel {
+  padding: 0 10px;
+}
+
+.min [template=list] .panel a {
+  height: auto;
+  overflow: unset;
+  line-height: 28px;
 }
