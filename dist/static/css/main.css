@@ -168,6 +168,7 @@ li {
   line-height: 58px;
   transition: height .5s;
   overflow: auto;
+  max-height: 350px;
 }
 [template=list] .panel a {
   height: 58px;
