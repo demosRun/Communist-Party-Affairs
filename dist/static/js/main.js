@@ -10,13 +10,17 @@ $(function () {
   first.height(first.children().length * 58 + 'px')
 
   $('.drop-down-item .title-bar').click(function(e) {
-    $('.drop-down-item').removeClass('active')
     var eventTarget = $(e.target)
-    // 标记为激活
-    eventTarget.parent().addClass('active')
-    $('.drop-down-item .panel').height(0)
-    var panel = eventTarget.siblings('.panel')
-    panel.height(panel.children().length * 58 + 'px')
+    // console.log(eventTarget.parent()[0].classList.contains('active'))
+    if (eventTarget.parent()[0].classList.contains('active')) {
+      // console.log(eventTarget.parent())
+      eventTarget.parent().removeClass('active')
+      $('.drop-down-item .panel').height(0)
+    } else {
+      eventTarget.parent().addClass('active')
+      var panel = eventTarget.siblings('.panel')
+      panel.height(panel.children().length * 58 + 'px')
+    }
   })
 
   // 轮播图
