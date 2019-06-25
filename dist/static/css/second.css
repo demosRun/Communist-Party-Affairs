@@ -11,9 +11,10 @@ body, html {
 body {
   background-color: white;
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center top;
+  background-position-y: 40px;
   min-width: 1200px;
+  background-size: 100%;
+  background-position-x: center;
   background-image: url('../resource/bg-second.png');
 }
 
@@ -38,7 +39,7 @@ a:hover {
 }
 
 .home {
-  margin-top: 15%;
+  margin-top: 17%;
   background-color: white;
 }
 p {
@@ -81,10 +82,14 @@ p {
   line-height: 80px;
 }
 
-.clear {
-  clear: both;
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both
 }
-
 .title h1 {
   display: inline;
   font-size: 36px;
@@ -186,4 +191,33 @@ footer[template=home] {
 
 .min textarea {
   width: calc(100% - 20px);
+}
+
+
+.title-bar[template=topBar] {
+  height: 40px;
+  background-color: #fff
+}
+[template=topBar] .title-bar-content {
+  width: 1000px;
+  height: 40px;
+  margin: auto
+}
+[template=topBar] .logo {
+  margin: 5px 10px;
+  height: 30px
+}
+[template=topBar] a {
+  float: left;
+  display: block
+}
+[template=topBar] .link {
+  color: #666;
+  font-size: 14px;
+  margin: 0 10px;
+  line-height: 40px
+}
+[template=topBar] a {
+  color: #333;
+  text-decoration: none
 }

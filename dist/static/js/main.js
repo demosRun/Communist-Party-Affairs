@@ -11,11 +11,13 @@ $(function () {
 
   $('.drop-down-item .title-bar').click(function(e) {
     var eventTarget = $(e.target)
+    console.log(eventTarget)
     // console.log(eventTarget.parent()[0].classList.contains('active'))
     if (eventTarget.parent()[0].classList.contains('active')) {
       // console.log(eventTarget.parent())
+      var panel = eventTarget.siblings('.panel')
       eventTarget.parent().removeClass('active')
-      $('.drop-down-item .panel').height(0)
+      panel.height(0)
     } else {
       eventTarget.parent().addClass('active')
       var panel = eventTarget.siblings('.panel')
@@ -46,5 +48,14 @@ $(function () {
   })
   $('.next').click(function(e) {
     mySwiper.swipeNext()
+  })
+  // 轮播图空区域点击事件
+  $('.swiper-container').click(function(e) {
+    var value = (e.pageX / document.body.offsetWidth) * 2
+    if (value < 1) {
+      mySwiper.swipePrev()
+    } else {
+      mySwiper.swipeNext()
+    }
   })
 })
