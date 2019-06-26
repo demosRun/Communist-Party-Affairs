@@ -23,10 +23,150 @@
   <meta name="x5-fullscreen" content="true" />
   <meta name="browsermode" content="application" />
   <meta name="x5-page-mode" content="app" />
-  <link rel="stylesheet" href="./static/css/second.css" charset="utf-8">
   <style>
     body, html {
-      background: none;
+      margin: 0;
+      padding: 0;
+      user-select: text;
+      font: normal 12px/180% "SimSun";
+      -webkit-overflow-scrolling: touch;
+      width: 100%;
+      overflow-x: hidden;
+      min-height: 100%;
+    }
+    body {
+      background-color: white;
+      background-repeat: no-repeat;
+      min-width: 1200px;
+      background-position-x: center;
+    }
+
+    h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td {
+      margin:0;
+      padding:0;
+    }
+    .fl {
+      float: left;
+    }
+    ul, li {
+      list-style-type: none;
+    }
+
+    a {
+      color: unset;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: white;
+    }
+    .min .text, .min .news-list, .min .submit {
+      width: unset;
+    }
+    .title .tag {
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      letter-spacing: 2px;
+      font-size: 24px;
+      font-weight: bold;
+      background-color: #ce2942;
+    }
+
+    .title .tag2 {
+      background-color: #1e3bb9;
+    }
+
+    .title .tag3 {
+      background-color: #33975f;
+    }
+
+    .title {
+      line-height: 80px;
+    }
+
+    .clear:after {
+      content: "";
+      height: 0;
+      line-height: 0;
+      display: block;
+      visibility: hidden;
+      clear: both
+    }
+    .title h1 {
+      display: inline;
+      font-size: 36px;
+      margin: 0 10px;
+    }
+    
+    .news-list {
+      width: 750px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed #797979;
+    }
+
+    .news-list:last-child { 
+      border-bottom: none;
+    }
+
+    textarea {
+      width: 730px;
+      height: 90px;
+      resize: none;
+      padding: 10px;
+      font-size: 14px;
+    }
+    .min .text, .min .news-list, .min .submit {
+      width: unset
+    }
+    p {
+      margin: 10px 0;
+    }
+    .text {
+      font-size: 16px;
+      line-height: 30px;
+      width: 750px;
+    }
+    .text-bottom em {
+      font-style: normal;
+      color: #969696;
+      margin-right: 20px;
+    }
+    .min .content {
+      padding: 0 15px;
+    }
+    .min {
+      min-width: unset;
+    }
+    .min .title {
+      line-height: 40px;
+    }
+    .min .title .tag {
+      padding: 5px 10px;
+      font-size: 22px;
+    }
+    .min textarea {
+      width: calc(100% - 20px);
+    }
+    .submit {
+      width: 750px;
+    }
+    .submit input {
+      width: 100px;
+      height: 40px;
+      border: none;
+      font-size: 20px;
+      letter-spacing: 2px;
+      background-color: #d52c1a;
+      color: white;
+      float: right;
+      margin: 10px 0;
+      cursor: pointer;
     }
   </style>
 </head>
